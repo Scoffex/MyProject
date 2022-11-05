@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../Css/StylePanelAdmin.css">
+</head>
+
+<body>
+    <header class="banner">
+        <img src="../img/logoATM.png">
+    </header>
+    <main>
+        <div class="column">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div id="realMain">
+            <nav>
+                <img src="../img/final.png">
+                <div id="divAssistance">
+                    <div id="textAssistance">
+                        <p>Admin Section</p>
+                        <p>N. Admin: #78246</p>
+                    </div>
+                    <img src="../img/admin.png" id="logoAss">
+                </div>
+            </nav>
+            <div id="content">
+                <div id="allContent">
+                    <h1>Insert a new funcitionality or update one: </h1>
+                    <div>
+                        <label>Id: (Only for update)</label>
+                        <input type="number" id="updateId" class="input">
+                    </div>
+                    <div>
+                        <label>Name:</label><br>
+                        <input type="text" id="nome" class="input" class="border">
+                    </div>
+                    <div>
+                        <label>Description:</label><br>
+                        <textarea id="description" class="input" , class="border"></textarea>
+                    </div>
+                    <fieldset class="border" id="fieldset">
+                        <legend>Is Enabled:</legend>
+                        <div>
+
+                            <input type="radio" value="true" name="enable" checked class="dimensionRadioCheck">
+                            <label>True</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="false" name="enable" class="dimensionRadioCheck">
+                            <label>False</label>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <label for="cars">Choose type of funcitionality:</label><br>
+                        <select name="func" id="select" class="input">
+                            <option value="0">WITHDRAWAL</option>
+                            <option value="1">DEPOSIT</option>
+                            <option value="2">BALANCE_INQUIRY</option>
+                            <option value="3">PAYMENT</option>
+                        </select>
+                    </div>
+                    <fieldset>
+                        <legend>Multisession:</legend>
+                        <div>
+                            <input type="radio" value="true" name="multisession" class="dimensionRadioCheck">
+                            <label>True</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" value="false" name="multisession" checked class="dimensionRadioCheck">
+                            <label>False</label>
+                        </div>
+                    </fieldset>
+                    <div id="check">
+                        <fieldset>
+                            <legend>CheckBox: </legend>
+                            <div id="checkbox">
+                                <input type="checkbox" value="1" name="checkbox" class="dimensionRadioCheck">
+                                <label for="vehicle1"> CDM</label><br>
+                                <input type="checkbox" value="2" name="checkbox" class="dimensionRadioCheck">
+                                <label for="vehicle2"> CIM</label><br>
+                                <input type="checkbox" value="3" name="checkbox" class="dimensionRadioCheck">
+                                <label for="vehicle3"> RPR</label><br>
+                                <input type="checkbox" value="4" name="checkbox" class="dimensionRadioCheck">
+                                <label for="vehicle3"> IPM</label><br>
+                                <input type="checkbox" value="5" name="checkbox" class="dimensionRadioCheck">
+                                <label for="vehicle3"> KEYBOARD</label><br>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="bankCodes">
+                        <label>How many Bank Code are abilitate to this function: </label><br>
+                        <input type="number" id="numBank" class="input">
+                    </div>
+                    <hr>
+                    <div id="PanCodes">
+                        <label>How many Pan Code are abilitate to this function: </label><br>
+                        <input type="number" id="numPan" class="input">
+                    </div>
+                    <div id="stampaErrori">
+
+                    </div>
+
+                    <div id="contBtnAction">
+                        <button id="btn" class="endButton">SEND</button>
+                        <button id="btnUpdate" class="endButton">UPDATE</button>
+                        <a href="AdminHomePage.html"><button id="back" class="endButton">BACK</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="column">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+    </main>
+    <footer class="banner">
+    </footer>
+</body>
+<script src="../Javascript/AdminPanelScript.js"></script>
+</html>

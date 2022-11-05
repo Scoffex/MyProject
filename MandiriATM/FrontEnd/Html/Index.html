@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+</head>
+<body>
+    <header class="banner">
+        <img src="../img/logoATM.png">
+    </header>
+    <main>
+        <div class="column">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div id="realMain">
+            <nav>
+                <img src="../img/final.png">
+              
+                <div id="divAssistance">
+                    <img src="../img/volumOn.png" id="muta" alt="muta">
+                    <div id="textAssistance">
+                        <p>Customer support</p>
+                        <p>+ 375 (17) 306-20-40</p>
+                    </div>
+                    <img src="../img/ass.png" id="logoAss">
+                </div>
+            </nav>
+            <div id="content">
+                <div id="columnOne">
+                    <h1>Welcome to Mandriri ATM, to start insert Card!</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen </p>
+                        <hr id="separatore">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </p>
+                        <img src="../img/carte.png">
+                </div>
+                <div id="columnTwo">
+                    <div>
+                        <label>Inseret PAN: </label><br>
+                        <input type="number" id="pan" class="inputText">
+                    </div>
+                    <div>
+                        <label>Insert BANKCODE: </label><br>
+                        <input type="number" id="bankCode" class="inputText">
+                    </div>
+                    <div id="check">
+                        <input type="checkbox" value="1">
+                        <label for="vehicle1"> BANKNOTE DISPENSER</label><br>
+                        <input type="checkbox" value="2" checked>
+                        <label for="vehicle2"> CASH-IN MODULE </label><br>
+                        <input type="checkbox" value="3">
+                        <label for="vehicle3"> RECEIPT PRINTER</label><br>
+                        <input type="checkbox" value="4" checked>
+                        <label for="vehicle3"> CHECKS SCANNER</label><br>
+                        <input type="checkbox" value="5" checked>
+                        <label for="vehicle3"> KEYBOARD</label>
+                    </div>
+                    <div id="imgContainer">
+                        <img src="../img/try3.gif" id="insert">
+                    </div>
+                </div>
+            </div>
+
+            <div class="Mainfooter" id="ciao">
+                <button class="btnControl" id="back">EXIT</button>
+                <a href="CheckAdmin.html" id="link"><div id="AdminSem" id="imgAdmin"> <img src="../img/admin.png"></div></a>
+                <button class="btnControl" id="next">PROCEDI</button>
+            </div>
+        </div>
+
+        <div class="column">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+    </main>
+    <footer class="banner">
+      
+    </footer>
+</div>
+
+<audio id="welcome" controls style="display:none" controls>
+    <source src="../Audio/Welcome.mp3" type="audio/mpeg"> 
+</audio>
+<audio id="error" controls style="display:none" controls>
+    <source src="../Audio/Errore.mp3" type="audio/mpeg" controls> 
+</audio>
+<audio id="accesso" controls style="display:none">
+    <source src="../Audio/Accesso.mp3" type="audio/mpeg" controls> 
+</audio>
+<audio id="errorComp" controls style="display:none">
+    <source src="../Audio/ErroreComp.mp3" type="audio/mpeg" controls> 
+</audio>
+</body>
+<script src="../Javascript/Script.js"></script>
+</html>
