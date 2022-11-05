@@ -1,0 +1,32 @@
+h1{
+    color: goldenrod;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #016f32;
+    
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#message-el {
+    font-style: italic;
+}
+.button-game{
+    background-color: goldenrod;
+    color: #016f32;
+    border: none;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1%;
+    border-radius: 10px;
+}
