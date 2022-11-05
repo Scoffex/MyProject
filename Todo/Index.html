@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Note Admin</title>
+</head>
+<body class="flex">
+    <main>
+    <h1 id="title">Note Admin</h1>
+
+    <div id="input" class="flex">
+        <input type="text" id="todo" placeholder="Insert your activity" class="elem">
+        <div class="flex" id="mem" class="elem">
+        <input type="date" id="todoDate" class="elem">
+        <input type="time" id="todoTime" class="elem">
+        </div>
+        <button id="add" class="elem">ADD NOTE</button>
+    </div>
+        <div id="advice"></div>
+    <div id="todo">
+        <h2>New</h2>
+        <div id="todoUl">
+        </div>
+    </div>
+
+    <div id="done">
+        <h2>Old</h2>
+        <div id="doneUl">
+        </div>
+    </div>
+    
+</main>
+<a href=""><button button id="back" class="elem">BACK</button></a>
+</body>
+<script src="Script.js"></script>
+</html>
