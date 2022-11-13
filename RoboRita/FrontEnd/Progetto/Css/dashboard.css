@@ -1,0 +1,496 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: green;
+}
+
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+/* CSS MENU LATERALE */ 
+#menu_laterale {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  border-right: green solid 5px;
+  z-index: 1;
+  text-align: left;
+  min-width: 20%;
+  max-width: 20%;
+}
+
+#menu_laterale img {
+  width: 180px;
+  z-index: 1;
+}
+
+#menu_laterale #logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#menu_laterale a {
+  text-decoration: none;
+  color: #41c735;
+  display: flex;
+  align-items: center;
+  width: 81%;
+  height: 80px;
+  padding-left: 19%;
+  font-size: 30px;
+}
+
+#menu_laterale ul {
+  width: 100%;
+}
+
+#menu_laterale li {
+  display: flex;
+  align-items: center;
+  width: 81%;
+  height: 80px;
+  padding-left: 19%;
+  font-size: 30px;
+  color: #41c735;
+}
+
+#menu_laterale li:hover {
+  background-color: #41c735;
+  color: white;
+}
+#menu_laterale a:hover {
+  background-color: #41c735;
+  color: white;
+}
+#menu_laterale .selected {
+  background-color: #41c735;
+  color: white;
+  border-top: solid green 5px;
+}
+/* CSS NAVB BAR */
+nav {
+  width: 80%;
+  height: 89px;
+  background-color: #41c735;
+  margin-left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: white solid 5px;
+}
+
+#hamburgher_menu div {
+  width: 50px;
+  height: 8px;
+  background-color: white;
+  margin: 5px;
+  position: relative;
+}
+
+#hamburgher_menu div::before {
+  content: "";
+  width: 50px;
+  height: 8px;
+  background-color: white;
+  margin-top: 5px;
+  position: absolute;
+  top: 10px;
+}
+
+#hamburgher_menu div::after {
+  content: "";
+  width: 50px;
+  height: 8px;
+  background-color: white;
+  margin-bottom: 5px;
+  position: absolute;
+  bottom: 10px;
+}
+
+nav img {
+  width: 50px;
+}
+
+nav input {
+  width: 500px;
+  height: 50px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+}
+
+nav #user_profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+}
+
+nav #user_profile:hover {
+  color: green;
+}
+
+nav img {
+  padding-left: 20px;
+}
+
+main {
+  padding: 3%;
+  margin-left: 20%;
+}
+
+/* CSS TABLE */
+#tabella_farmaci {
+  height: 600px;
+  width: 700px;
+  color: #898989;
+  background-color: white;
+  border-radius: 50px;
+  border-spacing: 0px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+#tabella_farmaci td {
+  padding: 3%;
+  border: none;
+}
+#tabella_farmaci img {
+  width: 60px;
+  height: 60px;
+  
+}
+#tabella_farmaci img:hover{
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+#tabella_farmaci .immagini {
+  text-align: center;
+  padding-right: 20px;
+}
+#titolo_lista {
+  font-size: 40px;
+  font-weight: bold;
+}
+.button_lista {
+  width: 200px;
+  height: 46px;
+  box-sizing: border-box;
+  background: #41c735;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  border: none;
+}
+#bottone_contenitore {
+  text-align: center;
+}
+#riga2 {
+  background-color: #41c735;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+#riga1,
+#riga2 {
+  height: 88px;
+}
+
+/*CSS SEZIONE PARAMETRI*/
+#parametri {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 5%;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#blocchi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#blocchi div {
+  width: 270px;
+  height: 270px;
+  background-color: white;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+#titolo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 3%;
+}
+#titolo_parametri {
+  font-size: 40px;
+}
+/* CSS LISTA */
+#liste {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+}
+#liste_richieste {
+  width: 500px;
+  height: 700px;
+  background-color: white;
+  border-radius: 50px;
+  color: #898989;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#liste_richieste .bold {
+  font-weight: bold;
+}
+#liste_richieste h2 {
+  
+  font-size: 40px;
+  padding: 3% 0% 3% 10%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+#liste_richieste p {
+  padding: 0% 10%;
+}
+
+#liste_richieste hr {
+  background-color: #41c735;
+  height: 10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  border-width: 0;
+}
+#button_pay {
+  width: 400px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#bottone_id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+#button_header{
+ margin-right: 20px;
+}
+.button_lista:hover{
+  background: green;
+}
+
+#header_text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px 30px;
+  border-radius: 50px;
+}
+#farmaci-form{
+  display: flex;
+  justify-content: space-between;
+}
+#farmaci, #bottoniFarmaci{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#bottoniFarmaci{
+  padding-right: 15%;
+}
+
+#farmaci input{
+  color: #41c735;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  width: 500px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 3px 5px;
+  border: solid #41c735 4px;  
+}
+
+#farmaci label{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  align-items: flex-start;
+}
+#finale{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+#tableFarmaci {
+  height: auto;
+  width: 100%;
+  color: #898989;
+  background-color: white;
+  border-spacing: 0px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+#tableFarmaci tr td{
+  border: #41c735 4px solid;
+  text-align: center;
+  padding: 50px 20px;
+}
+#RigaFarmaci1{
+  background-color: #41c735;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  height: 88px;
+  border-radius: 50px;
+}
+@media screen and (max-width: 1500px){
+  #bottoniFarmaci{
+    padding-right: 5%;
+  }
+}
+@media screen and (max-width: 1300px){
+  #bottoniFarmaci{
+    padding-right: 2%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #menu_laterale{
+    position: absolute; 
+    left: 10000000px;
+  }
+  
+  main{
+    margin: 0 auto;
+  }
+  
+  nav{
+    margin: 0;
+    width: 100%;
+  }
+  #liste{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+  @media screen and (max-width: 800px) {
+  nav h3{
+    position: absolute;
+    left: 10000000px;
+  }
+  nav input{
+    width: 400px;
+  }
+  #farmaci-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #tableFarmaci{
+    font-size: 15px;
+  }
+  #RigaFarmaci1{
+    font-size: 18px;
+
+  }
+  }
+  
+  @media screen and (max-width: 700px) {
+
+  #liste{
+    align-items: flex-start;
+    display: block;
+  }
+  #tabella_farmaci{
+    width: 100%;
+    font-size: 15px;
+  }
+  #riga2 {
+   
+    font-size: 20px;
+  
+  }
+  
+  #tabella_farmaci td {
+    padding: 3%;
+    border: none;
+  }
+  #tabella_farmaci img {
+    width: 40px;
+    height: 40px;
+   
+  }
+  #liste_richieste {
+    width: 100%;
+ 
+  }
+  }
+  @media screen and (max-width: 600px) {
+  nav input{
+    width: 320px;
+  }
+  nav img{
+    position: absolute;
+    left:10000000px;
+  }
+ #bottone_tabella{
+   width: 150px;
+ }
+ #farmaci input{
+  width: 100%;
+}
+#tableFarmaci{
+  font-size: 12px;
+}
+#RigaFarmaci1{
+  font-size: 15px;
+}
+  }

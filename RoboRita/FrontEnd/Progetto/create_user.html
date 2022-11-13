@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/create_user.css">
+    <title>Log-in</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="immagini/MyRobo.png" alt="logo" class="logo_scritta">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chi siamo?</a></li>
+                <li><a href="#">Log-in</a></li>
+            </ul>
+            <div class="search">
+                <input type="search" id="search" name="search" placeholder="Search here..." class="input">
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="contenitore">
+            <div class="dati">
+                <h1>Registrazione</h1>
+                <br>
+                <form>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="text" name="cognome" id="cognome" placeholder="Cognome" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="text" name="user" id="username" placeholder="Username" required>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <input type="button" value="Crea account" class="button" id="crea">
+            <p id="stampa"></p>
+            </form>
+            <br>
+            <p>Have an account? <span class="bold"><a href="log_in.html">Login here</a></span></p>
+            <p>Or connect with</p>
+            <br>
+            <a href="#"><img src="immagini/facebook.png"></a>
+            <a href="#"><img src="immagini/google.png"></a>
+        </div>
+    </main>
+</body>
+<script src="../src/create.js"></script>
+</html>
