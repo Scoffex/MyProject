@@ -31,11 +31,12 @@ public class Conversion {
 		studenteDTO.setSesso(studente.getSesso());
 		studenteDTO.setEmail(studente.getEmail());
 		studenteDTO.setPassword(studente.getPassword());
-		List<Integer> corsoId = new ArrayList<Integer>();
-		for (StudenteCorso studenteCorso : studente.getStudenteCorso()) {
-			corsoId.add(studenteCorso.getCorso().getId());
-		}
-		studenteDTO.setCorsiId(corsoId);
+//		List<Integer> corsoId = new ArrayList<Integer>();
+//		for (StudenteCorso studenteCorso : studente.getStudenteCorso()) {
+//			corsoId.add(studenteCorso.getCorso().getId());
+//		}
+		// studenteDTO.setCorsiId(cordoId);
+		studenteDTO.setCorsiId(studente.getStudenteCorso().stream().map(sc -> sc.getCorso().getId()).toList());
 		studenteDTO.setId(studente.getId());
 		return studenteDTO;
 	}
