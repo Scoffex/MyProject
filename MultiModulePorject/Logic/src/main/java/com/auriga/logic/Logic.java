@@ -8,6 +8,7 @@ public class Logic {
     private int operationId;
     
     public Logic(int num1, int num2, int operationId) {
+       System.out.println("");
        this.num1 = num1;
        this.num2=num2;
        this.operationId = operationId;
