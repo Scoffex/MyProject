@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://JAVA.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+	<servlet>
+		<servlet-name>Servlet</servlet-name>
+		<servlet-class>com.prova.servlets.MyServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SaveServlet</servlet-name>
+		<servlet-class>com.prova.servlets.SaveServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetAllServlet</servlet-name>
+		<servlet-class>com.prova.servlets.GetAllServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetById</servlet-name>
+		<servlet-class>com.prova.servlets.GetByIdServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Delete</servlet-name>
+		<servlet-class>com.prova.servlets.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SaveServlet</servlet-name>
+		<url-pattern>/save</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetAllServlet</servlet-name>
+		<url-pattern>/getAll</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetById</servlet-name>
+		<url-pattern>/getById</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Delete</servlet-name>
+		<url-pattern>/elimina</url-pattern>
+	</servlet-mapping>
+</web-app>
